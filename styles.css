@@ -1060,6 +1060,10 @@ body {
     color: white;
 }
 
+.social-links a:hover {
+    color: var(--primary-color) !important;
+}
+
 .footer-section p {
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 0.5rem;
@@ -1068,6 +1072,36 @@ body {
 .footer-section i {
     margin-right: 0.5rem;
     color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    line-height: 1;
+}
+
+.social-links a:hover {
+    background: white;
+    border-color: white;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 .footer-bottom {
